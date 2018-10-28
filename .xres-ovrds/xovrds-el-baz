@@ -1,0 +1,9 @@
+! Xdefaults overrides or additions specific to 'el-baz' can go here.
+
+URxvt*letterSpace: -0.9
+URxvt*font:            xft:Monaco for Powerline:regular:size=11:antialias=true
+URxvt*imFont:          xft:Monaco for Powerline:regular:size=11:antialias=true
+URxvt*boldFont:        xft:Monaco for Powerline:bold:size=11:antialias=true
+URxvt*italicFont:      xft:Monaco for Powerline:italic:size=11:antialias=true
+URxvt*boldItalicFont:  xft:Monaco for Powerline:bold:italic:size=11:antialias=true
+

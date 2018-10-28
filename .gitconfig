@@ -1,0 +1,26 @@
+[user]
+	name = Jessica K. Litwin
+	email = jessica@litw.in
+[core]
+  editor = vim
+  whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+  excludesfile = /Users/jkl/.gitignore_global
+[color]
+  ui = true
+[format]
+	pretty = oneline
+[alias]
+  # TODO be more awesome
+  undo = reset HEAD~
+  purge = reset HEAD --hard
+  chk = checkout
+  br = branch
+  wrk = "!git checkout -b"
+  mas = "!git checkout master"
+  sync = "!git commit -a -m \"sync from `hostname -s`\" && git push"
+  # these are evil nasty hacks
+  fixhead = "!git branch temp && git checkout temp && git branch -f master temp && git checkout master && git branch -d temp && git push origin master"
+  upfork = pull --rebase upstream master
+  washfork = "!git fetch upstream && git checkout master && git reset --hard upstream/master && git push origin master --force"
+[push]
+  default = simple

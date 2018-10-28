@@ -1,0 +1,4 @@
+#anti packrat cron; ignores executables 
+@monthly /usr/bin/find /home/jkl/tmp -not -perm -u+x -type f -mtime +90 -delete
+# keep keys up to date
+@monthly /usr/bin/gpg --refresh-keys

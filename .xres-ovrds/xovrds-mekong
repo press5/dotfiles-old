@@ -1,0 +1,3 @@
+! Xdefaults overrides or additions specific to 'mekong' can go here.
+
+URxvt*letterSpace: -1.5 

@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# turns capslock into control, like it should be
+
+if type setxkbmap >/dev/null 2>&1; then 
+ setxkbmap -layout us -option ctrl:nocaps 2>/dev/null
+fi 
+
+if [ "$(id -u)" != "0" ]; then 
+ echo "console capslock can only be modified by root\n"
+ exit 2
+fi
+
+(dumpkeys |  grep keymaps; echo "keycode 58 = Control") | loadkeys

@@ -1,0 +1,14 @@
+ctrlp.vim
+neobundle.vim
+neosnippet-snippets
+neosnippet.vim
+nerdtree
+php.vim
+vim-airline
+vim-airline-themes
+vim-colors-solarized
+vim-fugitive
+vim-indent-guides
+vim-perl
+vim-run-interactive
+vimshell
